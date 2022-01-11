@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>ICO Academy</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!------- contact us -------->
+
+<section class="location">
+    <h1>Our Local Academy</h1>
+    <p>Here are our academy branch in 3 major cities in Indonesia. Click the teks to open the maps.</p>
+    <div class="row">
+        <div class="location-col">
+            <img src="images/bekasi.png">
+            <div class="location-layer">
+                <a href="https://g.page/transsnowworldjuanda?share">
+                    <h3>BEKASI</h3>
+                </a>
+            </div>
+        </div>
+        <div class="location-col">
+            <img src="images/tangerang.png">
+            <div class="location-layer">
+                <a href="https://goo.gl/maps/dUiFZ1XhfDE1wq8bA">
+                    <h3>TANGERANG</h3>
+                </a>
+            </div>
+        </div>
+        <div class="location-col">
+            <img src="images/surabaya.png">
+            <div class="layer">
+                <a href="https://g.page/Kursipijatmurah?share">
+                    <h3>SURABAYA</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>  
+                <span>
+                    <h5>Surabaya, Bekasi, Tangerang</h5>
+                    <p>isi alamat</p>
+                </span>  
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>  
+                <span>
+                    <h5>+62(877665283)</h5>
+                    <p>Working hours Monday to Saturday, 8 AM - 7 PM</p>
+                </span>  
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>  
+                <span>
+                    <h5>icoacademy@gmail.com</h5>
+                    <p>Email us for further information or asking question</p>
+                </span>  
+            </div>
+        </div>
+
+        <div class="contact-col">
+        <form action="#" method="POST" onsubmit="showMessage()">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Email Address" required>
+            <input type="text" name="subject" placeholder="Enter Your Subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+        </div>
+    </div>
+
+</section>
+
+<!-------- Footer -------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>ICO Academy is the best and biggest academy in 3 big cities in Indonesia.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/ketipu.lu.9"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://twitter.com/treasuremembers"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com/vendicojuan/"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p><i class="fa fa-gratipay"></i> Made By Group 6 <i class="fa fa-gratipay"></i></p>
+</section>
+
+<!--------JavaScript for Toggle Menu-------->   
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    function showMessage(){
+				alert("Thank You For Sending Message :)");
+	}
+</script>
+
+</body>
+</html>

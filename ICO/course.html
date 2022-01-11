@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>ICO Academy</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+<!------- Course -------->
+
+<section class="course">
+    <h1>Course We Offer</h1>
+    <p>This is all course that SD-SMA levels can take.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>SD</h3>
+            <P>For SD there are several lessons,such as: <br>1. Mathematics<br>2. Natural Sciences<br>3. Indonesia Language</P>
+        </div>
+        <div class="course-col">
+            <h3>SMP</h3>
+            <P>For SMP there are several lessons,such as: <br>1. Mathematics<br>2. Natural Sciences<br>3. Indonesia Language<br>4. English Language</P>
+        </div>
+        <div class="course-col">
+            <h3>SMA</h3>
+            <P>For SMA there are several lessons,such as: <br>1. Mathematics<br>2. Natural/Social Sciences<br>3. Indonesia Language<br>4. English Language</P>
+        </div>
+    </div>
+</section>
+
+<!------- Price -------->
+
+<section class="price">
+    <h1>Book Now or Cry Later</h1>
+    <p>These are our price per June 2021. Price can be changed anytime.</p>
+
+    <div class="row">
+        <div class="price-col">
+            <h3>SD</h3>
+            <p>Online Classes: <br> 1. All Lesson Course(3x per week for 1 year) : Rp 800.000<br> 2. One Lesson Course (2x per week for 1 year) : Rp 400.000<br><br>
+            Offline Classes: <br> 1. All Lesson Course(3x per week for 1 year) : Rp 1.400.000<br> 2. One Lesson Course (2x per week for 1 year) : Rp 500.000</p>
+        </div>
+        <div class="price-col">
+            <h3>SMP</h3>
+            <p>Online Classes: <br> 1. All Lesson Course(4x per week for 1 year) : Rp 1.200.000<br> 2. One Lesson Course (2x per week for 1 year) : Rp 400.000<br><br>
+            Offline Classes: <br> 1. All Lesson Course(4x per week for 1 year) : Rp 2.100.000<br> 2. One Lesson Course (2x per week for 1 year) : Rp 600.000</p>
+        </div>
+        <div class="price-col">
+            <h3>SMA</h3>
+            <p>Online Classes: <br> 1. All Lesson Course(4x per week for 1 year) : Rp 1.900.000<br> 2. One Lesson Course (3x per week for 1 year) : Rp 400.000<br><br>
+            Offline Classes: <br> 1. All Lesson Course(4x per week for 1 year) : Rp 2.100.000<br> 2. One Lesson Course (3x per week for 1 year) : Rp 600.000</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!--------- Facilities ---------->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Here are our academy facilities that can be used by ICO Academy students.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.jpg">
+            <h3>ICO Academy Library</h3>
+            <p>Our library is only accessible to ICO Academy students and contains over 1.000 books.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty & Healthy Food</h3>
+            <p>Our cafeteria provides delicious and healthy food and drinks for the benefit of our students.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Healthy Play Ground</h3>
+            <p>We provide a play ground for our students to be healthy and to avoid stress.</p>
+        </div>
+    </div>
+</section>
+
+<!-------- Footer -------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>ICO Academy is the best and biggest academy in 3 big cities in Indonesia.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/ketipu.lu.9"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://twitter.com/treasuremembers"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com/vendicojuan/"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p><i class="fa fa-gratipay"></i> Made By Group 6 <i class="fa fa-gratipay"></i></p>
+</section>
+
+<!--------JavaScript for Toggle Menu-------->   
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
